@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>访问本地摄像头</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<video id="myvideo" width="400" height="300" autoplay></video>
+	<script type="text/javascript">
+		navigator.getUserMedia = navigator.getUserMedia()||mozGetUserMedia()||navigator.wekitGetUserMedia();
+		window.URL = window.URL||window.webkitaURL;
+
+		var video = document.getElmentById("myvideo");
+		navigator.getUserMedia(video:true,audio:false,function(stream){
+			video.src=window.URL.creatObject
+		})
+	</script>
+</body>
+</html>

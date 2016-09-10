@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文本控件与验证按钮</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function Validate(){
+			var txtName=document.getElementById("txt_name");
+			var button=document.getElementById("bntVakidate");
+			var form =document.getElementById("testForm");
+			if(txtName.value.trim()==""){
+				if(txtName.labels.length()==1){
+					var label=document.createElement("label");
+					label.setAttribute("for","txt_name");
+					form.insertBefore(label,button);
+					txtName.labels[1].innerHtml="请输入名字"；
+					txtName.labels[1].setAttribute("style","font-size:9px;color:red");
+				}
+			}
+			else if(txtName.labels.length()>1){
+				form.removeChild(txtName.labels[1]);
+			}
+		}
+		function value_change(){
+			var number = document.getElementById("range1").value;
+			document.getElementById("output1").value=number;
+		}
+	</script>
+</head>
+<body>
+
+	<form id="testForm">
+		<label id="label" for="txt_name">姓名：</label>
+		<input type="color" name="name" id="txt_name">
+		<input type="button" name="" value="验证" id="bntVakidate" onclick="Validate()"/>
+		<input type="range" min==0 max=100 step=5 value=0 id="range1" onchange="value_change()"/>
+		<output id="output1">0</output>
+		<p> 百分比：<progress value="40" max="100"></progress></p>
+		<meter value="50" min="0" max="100"></meter>
+	</form>
+</body>
+</html>
