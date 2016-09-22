@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style type="text/css">
+        .ani{
+            width:100px;
+            height:100px;
+            position: relative;
+            animation: myani  5s linear 2s infinite alternate ;
+            -moz-animation: myani 5s;
+            -webkit-align:myani 5s ;
+        }
+        @keyframes myani  {
+            0%{
+            background: indianred;
+                left: 0;
+                top: 0;
+                 }
+            25%{
+                background: #5ecca1;
+                left: 50px;
+                top: 0;
+            }
+            50%{
+                background: #944fcc;
+                left: 100px;
+                top: 0;
+            }
+           100%{
+                background: #4ccc29;
+                left: 500px;
+                top: 50px;
+            }
+        }
+        @-webkit-keyframes i  {
+            0%{
+                background: indianred;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background: #5ecca1;
+                left: 50px;
+                top: 0;
+            }
+            50%{
+                background: #944fcc;
+                left: 100px;
+                top: 0;
+            }
+            100%{
+                background: #4ccc29;
+                left: 500px;
+                top: 50px;
+            }
+        }
+        @-moz-keyframes i  {
+            0%{
+                background: indianred;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background: #5ecca1;
+                left: 50px;
+                top: 0;
+            }
+            50%{
+                background: #944fcc;
+                left: 100px;
+                top: 0;
+            }
+            100%{
+                background: #4ccc29;
+                left: 500px;
+                top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ani"></div>
+</body>
+</html>
