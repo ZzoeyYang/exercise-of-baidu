@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>滚动条操作</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        #top_div{
+            position:fixed;
+            bottom:80px;
+            right:0;
+            display:none;
+}
+.target{
+    width: 100px;
+    height: 200px;
+    margin:  0 auto;
+}
+</style>
+<script type="text/javascript">
+    window.onscroll = function(){
+    var t = document.documentElement.scrollTop || document.body.scrollTop; 
+    var top_div = document.getElementById( "top_div" );
+    if( t >= 300 ) {
+        top_div.style.display = "inline";
+    } else {
+        top_div.style.display = "none";
+    }
+}
+</script>
+</head>
+<body>
+    <a name="top">顶部<a>
+    <div id="top_div"><a href="#top">返回顶部</a></div>
+    <br />
+    <br />
+    <div class="target">
+    这里尽量多些<br />以便页面出现滚动条，限于篇幅本文此处略去2016年G20杭州峰会在G20发展道路上树立了一座中国丰碑，是最成功的G20峰会之一。<br />这次盛会，展现了中国精神，彰显了中国气派，显示中国力量；<br />让各国政要和经济大佬“最忆是杭州”。<br />盛会同时也让中国和世界开启了勇立潮头、再谋新篇的新征程。习近平对本次盛会的组织工作给予高度好评，他在对二十国集团领导人杭州峰会总结表彰工作所作<br />的重要指示中强调：“要在全社会大力弘扬广大干部群众表现出来的主人翁意识、爱国主义精神、无私<br />奉献精神，<br />使之成为培育和践行社会主义核心价值观、<br />推进社会主义精神文明建设的重要内容，为实现‘ 两个一百年’奋斗目标、实现中华民族伟大复兴的中国梦提供强大精神力量。”请随“学习中国”小编一起学习。
+    </div>
+</body>
+</html>
